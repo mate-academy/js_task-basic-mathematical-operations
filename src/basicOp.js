@@ -24,25 +24,18 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  let result;
   switch (operation) {
     case '+':
-      result = value1 + value2;
-      break;
+      return value1 + value2;
     case '-':
-      result = value1 - value2;
-      break;
+      return value1 - value2;
     case '*':
-      result = value1 * value2;
-      break;
+      return value1 * value2;
     case '/':
-      result = value1 / value2;
-      break;
+      return value1 / value2;
     default:
-      result = 0;
+      return 0;
   }
-
-  return result;
 }
 
 module.exports = basicOp;
