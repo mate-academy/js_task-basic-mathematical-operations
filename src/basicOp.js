@@ -27,17 +27,21 @@ function basicOp(operation, value1, value2) {
   if (value2 === 0 && operation === '/') {
     return 'ERROR: division by zero';
   }
+
   switch (operation) {
     case '+':
       return value1 + value2;
+
     case '-':
       return value1 - value2;
+
     case '*':
       return value1 * value2;
+
     case '/':
       return value1 / value2;
-    default:
-      return 0;
+
+    default: return 0;
   }
 }
 
