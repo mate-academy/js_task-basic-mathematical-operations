@@ -33,8 +33,10 @@ function basicOp(operation, value1, value2) {
   } else if (operation === '*') {
     result = value1 * value2;
   } else if (operation === '/') {
-    result = value1 / value2;
-  }
+    if (value1 && value2) {
+      result = value1 / value2;
+    }
+  } else { return 0; }
   return result;
 }
 
