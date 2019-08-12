@@ -39,6 +39,8 @@ function basicOp(operation, value1, value2) {
     case '/':
       result = value1 / value2;
       return result;
+    case 'default':
+      return 0;
   }
 }
 
