@@ -26,7 +26,8 @@
 function basicOp(operation, value1, value2) {
   // write code here
   switch (operation) {
-    case '+' : return value1 + value2;
+    case '+':
+      return value1 + value2;
     case '-' : return value1 - value2;
     case '*' : return value1 * value2;
     case '/' : return value1 / value2;
