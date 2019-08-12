@@ -29,18 +29,17 @@ function basicOp(operation, value1, value2) {
   switch (operation) {
     case '+':
       result = value1 + value2;
-      break;
+      return result;
     case '-':
       result = value1 - value2;
-      break;
+      return result;
     case '*':
       result = value1 * value2;
-      break;
+      return result;
     case '/':
       result = value1 / value2;
-      break;
+      return result;
   }
-  return result;
 }
 
 module.exports = basicOp;
