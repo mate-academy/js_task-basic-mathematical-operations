@@ -23,8 +23,32 @@
  *
  * @return {number}
  */
+// My first solution with eval )))
+
+// function basicOp(operation, value1, value2) {
+//   if (operation === '+' || operation === '-' || operation === '*' ||
+//  operation === '/') {
+//     return eval(value1 + operation + value2);
+//   } else {
+//     return 0;
+//   }
+// }
+
 function basicOp(operation, value1, value2) {
-  // write code here
+  if (operation === '+') {
+    return value1 + value2;
+  }
+  if (operation === '-') {
+    return value1 - value2;
+  }
+  if (operation === '*') {
+    return value1 * value2;
+  }
+  if (operation === '/') {
+    return value1 / value2;
+  } else {
+    return 0;
+  }
 }
 
 module.exports = basicOp;
