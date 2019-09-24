@@ -25,20 +25,22 @@
  */
 function basicOp(operation, value1, value2) {
   // write code here
-  let result = 0;
-  if (operation === '+') {
-    result = value1 + value2;
-  } else if (operation === '-') {
-    result = value1 - value2;
-  } else if (operation === '*') {
-    result = value1 * value2;
-  } else if (operation === '/') {
-    result = value1 / value2;
-  } else {
-    result = 0;
-  }
+  switch (operation) {
+    case '+':
+      return value1 + value2;
 
-  return result;
+    case '-':
+      return value1 - value2;
+
+    case '*':
+      return value1 * value2;
+
+    case '/':
+      return value1 / value2;
+
+    default:
+      return 0;
+  }
 }
 
 module.exports = basicOp;
