@@ -26,19 +26,18 @@
 function basicOp(operation, value1, value2) {
   const x = Number(value1);
   const y = Number(value2);
-  let result = 0;
 
-  if (operation === '+') {
-    result = x + y;
-  } else if (operation === '-') {
-    result = x - y;
-  } else if (operation === '*') {
-    result = x * y;
-  } else if (operation === '/') {
-    result = x / y;
-  } else { result = 0; }
+  switch (operation) {
+    case '+': return x + y;
 
-  return result;
+    case '-': return x - y;
+
+    case '/': return x / y;
+
+    case '*': return x * y;
+
+    default: return 0;
+  }
 }
 
 module.exports = basicOp;
