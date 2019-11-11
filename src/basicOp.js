@@ -25,6 +25,7 @@
  */
 function basicOp(operation, value1, value2) {
   let result = 0;
+
   if (operation === '+') {
     result = value1 + value2;
   } else if (operation === '-') {
@@ -33,9 +34,8 @@ function basicOp(operation, value1, value2) {
     result = value1 * value2;
   } else if (operation === '/') {
     result = value1 / value2;
-  } else {
-    return result;
   }
+
   return result;
 }
 
