@@ -25,6 +25,7 @@
  */
 function basicOp(operation, value1, value2) {
   let res;
+
   switch (operation) {
     case '+':
       res = value1 + value2;
@@ -41,6 +42,7 @@ function basicOp(operation, value1, value2) {
     default:
       res = 0;
   }
+
   return res;
 }
 
