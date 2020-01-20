@@ -37,12 +37,7 @@ function basicOp(operation, value1, value2) {
       return value1 * value2;
 
     case '/':
-      if (value2 !== 0) {
-        return value1 / value2;
-      } else {
-        return null;
-      }
-
+      return value2 === 0 ? null : value1 / value2;
     default:
       return 0;
   }
