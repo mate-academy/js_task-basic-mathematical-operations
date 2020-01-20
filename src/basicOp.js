@@ -25,25 +25,20 @@
  */
 function basicOp(operation, value1, value2) {
   switch (operation) {
-    case '+': {
+    case '+':
       return value1 + value2;
-    }
 
-    case '-': {
+    case '-':
       return value1 - value2;
-    }
 
-    case '*': {
+    case '*':
       return value1 * value2;
-    }
 
-    case '/': {
+    case '/':
       return value1 / value2;
-    }
 
-    default: {
+    default:
       return 0;
-    }
   }
 }
 
