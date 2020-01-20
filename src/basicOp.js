@@ -24,7 +24,11 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  // write code here
+  return (operation === '+') ? value1 + value2
+    : (operation === '-') ? value1 - value2
+      : (operation === '*') ? value1 * value2
+        : (operation === '/') ? value1 / value2
+          : 0;
 }
 
 module.exports = basicOp;
