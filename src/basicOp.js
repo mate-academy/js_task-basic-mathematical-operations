@@ -32,9 +32,9 @@ function basicOp(operation, value1, value2) {
     return value1 * value2;
   } else if (operation === '/') {
     return value1 / value2;
-  } else {
-    return 0;
   }
+
+  return 0;
 }
 
 module.exports = basicOp;
