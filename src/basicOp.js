@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 'use strict';
 
 /**
@@ -24,7 +25,22 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  // write code here
+  switch (String(operation)) {
+    case '+':
+      return value1 + value2;
+      break;
+    case '-':
+      return value1 - value2;
+      break;
+    case '*':
+      return value1 * value2;
+      break;
+    case '/':
+      return value1 / value2;
+      break;
+    default:
+      return 0;
+  }
 }
 
 module.exports = basicOp;
