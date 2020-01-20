@@ -24,11 +24,17 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  return (operation === '+') ? value1 + value2
-    : (operation === '-') ? value1 - value2
-      : (operation === '*') ? value1 * value2
-        : (operation === '/') ? value1 / value2
-          : 0;
+  if (operation === '+') {
+    return value1 + value2;
+  } else if (operation === '-') {
+    return value1 - value2;
+  } else if (operation === '*') {
+    return value1 * value2;
+  } else if (operation === '/') {
+    return value1 / value2;
+  } else {
+    return 0;
+  };
 }
 
 module.exports = basicOp;
