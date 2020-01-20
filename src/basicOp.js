@@ -25,8 +25,6 @@
  */
 function basicOp(operation, value1, value2) {
   switch (operation) {
-    default:
-      return 0;
     case '+' :
       return value1 + value2;
     case '-' :
@@ -35,6 +33,8 @@ function basicOp(operation, value1, value2) {
       return value1 * value2;
     case '/' :
       return value1 / value2;
+    default:
+      return 0;
   }
 }
 
