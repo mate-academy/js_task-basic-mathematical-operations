@@ -24,7 +24,42 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  // write code here
+  let count = 0;
+
+  switch (operation) {
+    case '-' :
+      count = value1 - value2;
+      break;
+    case '+' :
+      count = value1 + value2;
+      break;
+    case '*' :
+      count = value1 * value2;
+      break;
+    case '/' :
+      count = value1 / value2;
+      break;
+    default :
+      count = 0;
+  }
+
+  return count;
+
+  // Работают оба варианта, тесты проходят. Просто не знал, какой именно нужен.
+
+  // if (operation === '+') {
+  //   count = value1 + value2;
+  // } else if (operation === '-') {
+  //   count = value1 - value2;
+  // } else if (operation === '*') {
+  //   count = value1 * value2;
+  // } else if (operation === '/') {
+  //   count = value1 / value2;
+  // } else {
+  //   return count;
+  // }
+
+  // return count;
 }
 
 module.exports = basicOp;
