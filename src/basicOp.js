@@ -24,7 +24,27 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  // write code here
+  let availableOperations = "+-*/";
+
+  if (availableOperations.indexOf(operation) == -1) {
+    return 0;
+  }
+
+  else if (availableOperations.indexOf(operation) == 0) {
+    return value1 + value2;
+  }
+
+  else if (availableOperations.indexOf(operation) == 1) {
+    return value1 - value2;
+  }
+
+  else if (availableOperations.indexOf(operation) == 2) {
+    return value1 * value2;
+  }
+
+  else if (availableOperations.indexOf(operation) == 3) {
+    return value1 / value2;
+  }
 }
 
 module.exports = basicOp;
