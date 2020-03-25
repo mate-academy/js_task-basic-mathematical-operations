@@ -23,8 +23,15 @@
  *
  * @return {number}
  */
+
 function basicOp(operation, value1, value2) {
-  // write code here
+  const res = (operation === '+') ? (value1 + value2)
+    : (operation === '-') ? (value1 - value2)
+      : (operation === '*') ? (value1 * value2)
+        : (operation === '/') ? (value1 / value2)
+          : 0;
+
+  return res;
 }
 
 module.exports = basicOp;
