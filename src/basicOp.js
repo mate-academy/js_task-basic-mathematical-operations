@@ -24,7 +24,26 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  // write code here
+  let sum = 0;
+
+  switch (operation) {
+    case '+':
+      sum = value1 + value2;
+      break;
+    case '-':
+      sum = value1 - value2;
+      break;
+    case '*':
+      sum = value1 * value2;
+      break;
+    case '/':
+      sum = value1 / value2;
+      break;
+    default:
+      sum = 0;
+  }
+
+  return sum;
 }
 
 module.exports = basicOp;
