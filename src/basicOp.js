@@ -24,33 +24,21 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  let result;
-
   switch (operation) {
     case '+':
-      result = value1 + value2;
-
-      return result;
+      return value1 + value2;
 
     case '-':
-      result = value1 - value2;
-
-      return result;
+      return value1 - value2;
 
     case '*':
-      result = value1 * value2;
-
-      return result;
+      return value1 * value2;
 
     case '/':
-      result = value1 / value2;
-
-      return result;
+      return value1 / value2;
 
     default:
-      result = 0;
-
-      return result;
+      return 0;
   }
 }
 
