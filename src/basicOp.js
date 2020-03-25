@@ -24,26 +24,18 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  let count = 0;
-
   switch (operation) {
     case '-' :
-      count = value1 - value2;
-      break;
+      return value1 - value2;
     case '+' :
-      count = value1 + value2;
-      break;
+      return value1 + value2;
     case '*' :
-      count = value1 * value2;
-      break;
+      return value1 * value2;
     case '/' :
-      count = value1 / value2;
-      break;
+      return value1 / value2;
     default :
-      count = 0;
+      return 0;
   }
-
-  return count;
 
   // Работают оба варианта, тесты проходят. Просто не знал, какой именно нужен.
 
