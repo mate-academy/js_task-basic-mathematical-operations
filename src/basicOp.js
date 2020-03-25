@@ -26,10 +26,14 @@
 function basicOp(operation, value1, value2) {
   let allValue = 0;
 
-  operation === '+' ? allValue = (value1 + value2)
-    : operation === '-' ? allValue = (value1 - value2)
-      : operation === '*' ? allValue = (value1 * value2)
-        : operation === '/' ? allValue = (value1 / value2)
+  operation === '+'
+    ? allValue = (value1 + value2)
+    : operation === '-'
+      ? allValue = (value1 - value2)
+      : operation === '*'
+        ? allValue = (value1 * value2)
+        : operation === '/'
+          ? allValue = (value1 / value2)
           : allValue = 0;
 
   return allValue;
