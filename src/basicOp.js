@@ -26,24 +26,24 @@
 function basicOp(operation, value1, value2) {
   let availableOperations = "+-*/";
 
-  if (availableOperations.indexOf(operation) == -1) {
-    return 0;
-  }
-
-  else if (availableOperations.indexOf(operation) == 0) {
+  if (operation === "+") {
     return value1 + value2;
   }
 
-  else if (availableOperations.indexOf(operation) == 1) {
+  else if (operation === "-") {
     return value1 - value2;
   }
 
-  else if (availableOperations.indexOf(operation) == 2) {
+  else if (operation === "*") {
     return value1 * value2;
   }
 
-  else if (availableOperations.indexOf(operation) == 3) {
+  else if (operation === "/") {
     return value1 / value2;
+  }
+
+  else {
+    return 0;
   }
 }
 
