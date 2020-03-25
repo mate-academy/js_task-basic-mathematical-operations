@@ -24,8 +24,7 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  let availableOperations = "+-*/";
-
+  
   if (operation === "+") {
     return value1 + value2;
   }
