@@ -25,19 +25,14 @@
  */
 function basicOp(operation, value1, value2) {
   // write code here
-  const sum = value1 + value2;
-  const sub = value1 - value2;
-  const mult = value1 * value2;
-  const div = value1 / value2;
-
   if (operation === '+') {
-    return sum;
+    return value1 + value2;
   } else if (operation === '-') {
-    return sub;
+    return value1 - value2;
   } else if (operation === '*') {
-    return mult;
+    return value1 * value2;
   } else if (operation === '/') {
-    return div;
+    return value1 / value2;
   } else {
     return 0;
   }
