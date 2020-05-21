@@ -24,7 +24,12 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  // write code here
+  const result = (operation === '+') ? (value1 + value2)
+    : (operation === '-') ? (value1 - value2)
+      : (operation === '*') ? (value1 * value2)
+        : (operation === '/') ? (value1 / value2) : 0;
+
+  return result;
 }
 
 module.exports = basicOp;
