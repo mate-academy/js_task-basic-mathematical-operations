@@ -24,6 +24,8 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
+  const zero = 0;
+
   if (operation === '+') {
     return value1 + value2;
   } else if (operation === '-') {
@@ -33,7 +35,7 @@ function basicOp(operation, value1, value2) {
   } else if (operation === '/') {
     return value1 / value2;
   } else {
-    return 0;
+    return zero;
   }
 }
 
