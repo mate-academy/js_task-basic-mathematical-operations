@@ -24,8 +24,6 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  const zero = 0;
-
   switch (operation) {
     case '+':
       return value1 + value2;
@@ -36,7 +34,7 @@ function basicOp(operation, value1, value2) {
     case '/':
       return value1 / value2;
     default:
-      return zero;
+      return 0;
   }
 }
 
