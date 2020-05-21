@@ -28,12 +28,18 @@ function basicOp(operation, value1, value2) {
   const sub = '-';
   const mult = '*';
   const div = '/';
-  const result = (operation === sum) ? (value1 + value2)
-    : (operation === sub) ? (value1 - value2)
-      : (operation === mult) ? (value1 * value2)
-        : (operation === div) ? (value1 / value2) : 0;
 
-  return result;
+  if (operation === sum) {
+    return value1 + value2;
+  } else if (operation === sub) {
+    return value1 - value2;
+  } else if (operation === mult) {
+    return value1 * value2;
+  } else if (operation === div) {
+    return value1 / value2;
+  } else {
+    return 0;
+  }
 }
 
 module.exports = basicOp;
