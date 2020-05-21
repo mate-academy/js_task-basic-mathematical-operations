@@ -1,3 +1,6 @@
+/* eslint-disable no-template-curly-in-string */
+/* eslint-disable max-len */
+/* eslint-disable eqeqeq */
 'use strict';
 
 /**
@@ -24,7 +27,17 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  // write code here
+  if (operation == '+') {
+    return value1 + value2;
+  } else if (operation == '-') {
+    return value1 - value2;
+  } else if (operation == '/') {
+    return value1 / value2;
+  } else if (operation == '*') {
+    return value1 * value2;
+  } else {
+    return 0;
+  }
 }
 
 module.exports = basicOp;
