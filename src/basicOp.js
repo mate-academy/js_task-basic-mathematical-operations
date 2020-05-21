@@ -24,10 +24,14 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  const result = (operation === '+') ? (value1 + value2)
-    : (operation === '-') ? (value1 - value2)
-      : (operation === '*') ? (value1 * value2)
-        : (operation === '/') ? (value1 / value2) : 0;
+  const sum = '+';
+  const sub = '-';
+  const mult = '*';
+  const div = '/';
+  const result = (operation === sum) ? (value1 + value2)
+    : (operation === sub) ? (value1 - value2)
+      : (operation === mult) ? (value1 * value2)
+        : (operation === div) ? (value1 / value2) : 0;
 
   return result;
 }
