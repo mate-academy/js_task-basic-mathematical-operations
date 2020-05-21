@@ -25,6 +25,22 @@
  */
 function basicOp(operation, value1, value2) {
   // write code here
+  const sum = value1 + value2;
+  const sub = value1 - value2;
+  const mult = value1 * value2;
+  const div = value1 / value2;
+
+  if (operation === '+') {
+    return sum;
+  } else if (operation === '-') {
+    return sub;
+  } else if (operation === '*') {
+    return mult;
+  } else if (operation === '/') {
+    return div;
+  } else {
+    return 0;
+  }
 }
 
 module.exports = basicOp;
