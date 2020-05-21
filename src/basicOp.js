@@ -26,16 +26,17 @@
 function basicOp(operation, value1, value2) {
   const zero = 0;
 
-  if (operation === '+') {
-    return value1 + value2;
-  } else if (operation === '-') {
-    return value1 - value2;
-  } else if (operation === '*') {
-    return value1 * value2;
-  } else if (operation === '/') {
-    return value1 / value2;
-  } else {
-    return zero;
+  switch (operation) {
+    case '+':
+      return value1 + value2;
+    case '-':
+      return value1 - value2;
+    case '*':
+      return value1 * value2;
+    case '/':
+      return value1 / value2;
+    default:
+      return zero;
   }
 }
 
