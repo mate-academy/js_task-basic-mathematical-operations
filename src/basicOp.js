@@ -1,14 +1,23 @@
 'use strict';
 
 function basicOp(operation, value1, value2) {
-  const operators = {
-    '+': value1 + value2,
-    '-': value1 - value2,
-    '*': value1 * value2,
-    '/': value1 / value2,
-  };
+  if (operation === '+') {
+    return value1 + value2;
+  }
 
-  return (operators[operation]) ? operators[operation] : 0;
+  if (operation === '-') {
+    return value1 - value2;
+  }
+
+  if (operation === '*') {
+    return value1 * value2;
+  }
+
+  if (operation === '/') {
+    return value1 / value2;
+  }
+
+  return 0;
 }
 
 module.exports = basicOp;
