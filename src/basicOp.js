@@ -24,7 +24,22 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  // write code here
+  const sum = '+';
+  const sub = '-';
+  const mult = '*';
+  const div = '/';
+
+  if (operation === sum) {
+    return value1 + value2;
+  } else if (operation === sub) {
+    return value1 - value2;
+  } else if (operation === mult) {
+    return value1 * value2;
+  } else if (operation === div) {
+    return value1 / value2;
+  } else {
+    return 0;
+  }
 }
 
 module.exports = basicOp;
