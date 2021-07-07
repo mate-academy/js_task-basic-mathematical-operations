@@ -24,7 +24,20 @@
  * @return {number}
  */
 function basicOp(operation, value1, value2) {
-  // write code here
+  const x = Number(value1);
+  const y = Number(value2);
+
+  switch (operation) {
+    case '+': return x + y;
+
+    case '-': return x - y;
+
+    case '/': return x / y;
+
+    case '*': return x * y;
+
+    default: return 0;
+  }
 }
 
 module.exports = basicOp;
