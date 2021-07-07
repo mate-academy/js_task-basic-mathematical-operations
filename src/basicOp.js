@@ -23,8 +23,27 @@
  *
  * @return {number}
  */
+
 function basicOp(operation, value1, value2) {
-  // write code here
+  let output;
+
+  switch (operation) {
+    case '+':
+      output = value1 + value2;
+      break;
+    case '*':
+      output = value1 * value2;
+      break;
+    case '-':
+      output = value1 - value2;
+      break;
+    case '/':
+      output = value1 / value2;
+      break;
+    default: output = 0;
+  }
+
+  return output;
 }
 
 module.exports = basicOp;
